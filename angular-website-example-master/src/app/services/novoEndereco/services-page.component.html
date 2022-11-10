@@ -1,0 +1,31 @@
+<div id="services" class="scrollto clearfix" *ngIf="services$ | async as services">
+  <div class="row no-padding-bottom clearfix">
+    <!--Content Left Side-->
+    <div class="col-3">
+      <!--User Testimonial-->
+      <!-- End of Testimonial-->
+    </div>
+    <!--End Content Left Side-->
+
+    <!--Content of the Right Side-->
+    <div class="col-3">
+      <div class="section-heading">
+        <h3>{{ services.tagline }}</h3>
+        <h2 class="section-title">{{ "Adicione um endereço" }}</h2>
+        <p class="section-subtitle">{{ services.description }}</p>
+      </div>
+      <p>
+        Forms de endereço aqui
+      </p>
+      <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+      <forms>
+        <label></label>
+      </forms>
+    </div>
+    <!--End Content Right Side-->
+
+    <div class="col-3">
+      <img src="assets/images/dancer.jpg" alt="Dancer" />
+    </div>
+  </div>
+</div>

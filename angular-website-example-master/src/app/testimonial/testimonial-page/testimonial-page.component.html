@@ -1,0 +1,18 @@
+<aside id="testimonials" class="scrollto text-center pull-center pull-center" data-enllax-ratio=".2">
+  <div class="row clearfix">
+    <div class="section-heading" *ngIf="testimonials$ | async as testimonials">
+      <h3 class="pull-down">{{ testimonials.tagline }}</h3>
+      <h2 class="section-title">{{ "Log in" }}</h2>
+    </div>
+    <div>
+      <label for="name">Usuario: </label>
+      <input id="name" type="text"> <br>
+      <label for="name">Senha: </label>
+      <input id="name" type="text"> <br>
+      <button type="button">Logar</button>
+    </div>
+    <!--User Testimonial-->
+
+    <!-- End of Testimonial-->
+  </div>
+</aside>

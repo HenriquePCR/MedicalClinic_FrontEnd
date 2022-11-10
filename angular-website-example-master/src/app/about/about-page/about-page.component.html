@@ -1,0 +1,11 @@
+<section id="about" class="introduction scrollto pull-right" *ngIf="intro$ | async as intro">
+  <div class="row clearfix">
+    <div class="col-3">
+      <div class="section-heading">
+        <h3>{{ intro.tagline }}</h3>
+        <h2 class="section-title">{{ "Agendamento de consulta" }}</h2>
+        <p class="section-subtitle">{{ intro.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
