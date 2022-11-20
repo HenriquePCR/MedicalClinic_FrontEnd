@@ -13,7 +13,7 @@ export class NavigationComponent implements OnInit {
   menuOpen: boolean;
   database = "menu";
 
-  constructor(private location: Location, private config: ConfigService) {}
+  constructor(private location: Location, private config: ConfigService) { }
 
   ngOnInit() {
     this.menuOpen = false;

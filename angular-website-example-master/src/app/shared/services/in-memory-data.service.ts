@@ -102,13 +102,13 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 5, name: "gallery-image-5.jpg" },
       { id: 6, name: "gallery-image-6.jpg" },
     ];
-    const menu = [
-      { id: 1, title: "Home", link: "/home" },
-      { id: 2, title: "Agendamento", link: "/about" },
-      { id: 3, title: "Novo Endereço", link: "/services" },
-      { id: 4, title: "Gallery", link: "/gallery" },
-      { id: 5, title: "Log in", link: "/testimonials" },
-    ];
+    // const menu = [
+    //   { id: 1, title: "Home", link: "/home" },
+    //   { id: 2, title: "Agendamento", link: "/about" },
+    //   { id: 3, title: "Novo Endereço", link: "/services" },
+    //   { id: 4, title: "Gallery", link: "/gallery" },
+    //   { id: 5, title: "Log in", link: "/testimonials" },
+    // ];
 
     // const menu2 = [
     //   { id: 1, title: "Novo Funcionário", link: "/home" },
@@ -296,7 +296,6 @@ export class InMemoryDataService implements InMemoryDbService {
     ];
 
     return {
-      menu,
       pages,
       features,
       images,

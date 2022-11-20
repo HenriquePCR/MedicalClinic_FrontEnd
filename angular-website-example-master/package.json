@@ -21,6 +21,7 @@
     "@angular/router": "^14.0.6",
     "@ng-bootstrap/ng-bootstrap": "^13.1.0",
     "angular-in-memory-web-api": "^0.14.0",
+    "bootstrap": "^5.2.2",
     "core-js": "^3.23.4",
     "font-awesome": "^4.7.0",
     "rxjs": "~7.5.6",

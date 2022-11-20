@@ -10,17 +10,17 @@ const routes: Routes = [
       import("./home/home.module").then((mod) => mod.HomeModule),
   },
   {
-    path: "about",
+    path: "agendamento",
     loadChildren: () =>
       import("./agendamento/about.module").then((mod) => mod.AboutModule),
   },
   {
-    path: "services",
+    path: "novoEndereco",
     loadChildren: () =>
       import("./services/services.module").then((mod) => mod.ServicesModule),
   },
   {
-    path: "testimonials",
+    path: "logIn",
     loadChildren: () =>
       import("./testimonial/testimonial.module").then(
         (mod) => mod.TestimonialModule
@@ -45,4 +45,4 @@ const routes: Routes = [
   exports: [RouterModule],
   declarations: [],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

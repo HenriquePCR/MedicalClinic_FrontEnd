@@ -7,10 +7,16 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class NavmenuComponent {
 
-@Input() menu: any;
-@Input() menuOpen: boolean;
-@Output() menuStatus: EventEmitter<any> = new EventEmitter<any>();
+  @Input() menuOpen: boolean;
+  @Output() menuStatus: EventEmitter<any> = new EventEmitter<any>();
 
+  menu = [
+    { id: 1, title: "Home", link: "/home" },
+    { id: 2, title: "Agendamento", link: "/agendamento" },
+    { id: 3, title: "Novo Endereço", link: "/novoEndereco" },
+    { id: 4, title: "Gallery", link: "/gallery" },
+    { id: 5, title: "Log in", link: "/logIn" },
+  ];
   constructor() { }
 
   toggleMenu() {

@@ -23,6 +23,7 @@ import { ServicesModule } from "./services/services.module";
 // Services
 import { ConfigService } from "./shared/services/config.service";
 import { InMemoryDataService } from "./shared/services/in-memory-data.service";
+import { Header2Component } from './header2/header2.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { InMemoryDataService } from "./shared/services/in-memory-data.service";
     NavmenuComponent,
     SocialComponent,
     WebsiteBlockComponent,
+    Header2Component,
   ],
   imports: [
     AboutModule,
