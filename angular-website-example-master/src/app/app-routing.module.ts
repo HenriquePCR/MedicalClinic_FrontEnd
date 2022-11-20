@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: "about",
     loadChildren: () =>
-      import("./about/about.module").then((mod) => mod.AboutModule),
+      import("./agendamento/about.module").then((mod) => mod.AboutModule),
   },
   {
     path: "services",
