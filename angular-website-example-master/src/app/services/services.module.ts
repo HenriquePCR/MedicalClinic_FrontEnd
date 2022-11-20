@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ServicesRoutingModule } from './services-routing.module';
 import { ServicesPageComponent } from './novoEndereco/services-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { ServicesPageComponent } from './novoEndereco/services-page.component';
   ],
   imports: [
     CommonModule,
-    ServicesRoutingModule
+    ServicesRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ServicesModule { }

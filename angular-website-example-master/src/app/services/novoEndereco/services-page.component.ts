@@ -1,6 +1,7 @@
-import { Observable } from 'rxjs';
+
 import { Component, OnInit } from "@angular/core";
-import { ConfigService } from "../../shared/services/config.service";
+import { FormBuilder } from '@angular/forms';
+import { NovoEnderecoService } from '../novoEndereco.service';
 
 @Component({
   selector: "app-services-page",
@@ -8,22 +9,31 @@ import { ConfigService } from "../../shared/services/config.service";
   styleUrls: ["./services-page.component.css"],
 })
 export class ServicesPageComponent implements OnInit {
-  // services: {
-  //   id: number;
-  //   name: string;
-  //   tagline: string;
-  //   title: string;
-  //   description: string;
-  // }[];
-  services$: Observable<any> = new Observable();
 
-  constructor(private config: ConfigService) {}
+  checkoutForm = this.formBuilder.group({
+    cep: '',
+    logradouro: '',
+    bairro: '',
+    cidade: '',
+    estado: ''
+  });
+
+  constructor(private formBuilder: FormBuilder, private novoEnderecoService: NovoEnderecoService) {
+  }
 
   ngOnInit() {
-    this.getPageData("pages", 3);
+
   }
 
-  getPageData(database: string, id?: number) {
-    this.services$ = this.config.getSettings(database, id);
+  onSubmit(): void {
+    this.novoEnderecoService.cadastrarEndereco(this.checkoutForm.value).subscribe({
+      next: (res) => {
+        console.log(res);
+      },
+      error: (e) => console.error(e)
+    });
+
+    this.checkoutForm.reset();
   }
+
 }
