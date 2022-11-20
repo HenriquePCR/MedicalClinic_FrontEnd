@@ -8,36 +8,11 @@ import { ConfigService } from "../../shared/services/config.service";
   styleUrls: ["./testimonial-page.component.css"],
 })
 export class TestimonialPageComponent implements OnInit {
-  // testimonials: {
-  //   id: number;
-  //   name: string;
-  //   tagline: string;
-  //   title: string;
-  //   description: string;
-  // }[];
-
-  // feedback: {
-  //   id: number;
-  //   name: string;
-  //   userimage: string;
-  //   comments: string;
-  //   company: string;
-  // }[];
-  testimonials$: Observable<any> = new Observable();
-  feedback$: Observable<any> = new Observable();
 
   constructor(private config: ConfigService) {}
 
   ngOnInit() {
-    this.getPageData("pages", 4);
-    this.getBlockData("feedback");
   }
 
-  getPageData(database: string, id?: number) {
-    this.testimonials$ = this.config.getSettings(database, id);
-  }
 
-  getBlockData(database: string) {
-    this.feedback$ = this.config.getSettings(database);
-  }
 }

@@ -1,4 +1,4 @@
-<div *ngIf="header$ | async as header">
+<div>
   <header id="banner" class="scrollto clearfix shift-left" data-enllax-ratio=".5" [style.background]="
       'url(../assets/images/banner-images/' +
       header.image +
@@ -7,13 +7,11 @@
     <div id="banner-content" class="row clearfix pull-center">
       <div class="col-38">
         <div class="section-heading">
-          <h1>{{ "Permes Houdini" }}</h1>
-          <h2>{{ "texto" }}</h2>
+          <h1>PERMES HOUDINI</h1>
+          <h2></h2>
         </div>
 
-        <a routerLink="{{ header.buttonlink }}" class="button">{{
-          "texto1"
-          }}</a>
+        <a routerLink="{{ header.buttonlink }}" class="button">entre no sistema</a>
       </div>
     </div>
   </header>

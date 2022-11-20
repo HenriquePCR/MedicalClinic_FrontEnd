@@ -8,20 +8,10 @@ import { ConfigService } from "../../shared/services/config.service";
   styleUrls: ["./gallery-page.component.css"],
 })
 export class GalleryPageComponent implements OnInit {
-  images$: Observable<any> = new Observable();
-
-  // images: {
-  //   id: number;
-  //   name: string;
-  // }[];
 
   constructor(private config: ConfigService) {}
 
   ngOnInit() {
-    this.getBlockData("images");
   }
 
-  getBlockData(database: string) {
-    this.images$ = this.config.getSettings(database);
-  }
 }
