@@ -1,7 +1,6 @@
-
 import { Component, OnInit } from "@angular/core";
-import { FormBuilder } from '@angular/forms';
-import { NovoEnderecoService } from '../novoEndereco.service';
+import { FormBuilder } from "@angular/forms";
+import { NovoEnderecoService } from "../novoEndereco.service";
 
 @Component({
   selector: "app-services-page",
@@ -9,31 +8,32 @@ import { NovoEnderecoService } from '../novoEndereco.service';
   styleUrls: ["./services-page.component.css"],
 })
 export class ServicesPageComponent implements OnInit {
-
   checkoutForm = this.formBuilder.group({
-    cep: '',
-    logradouro: '',
-    bairro: '',
-    cidade: '',
-    estado: ''
+    cep: "",
+    logradouro: "",
+    bairro: "",
+    cidade: "",
+    estado: "",
   });
 
-  constructor(private formBuilder: FormBuilder, private novoEnderecoService: NovoEnderecoService) {
-  }
+  constructor(
+    private formBuilder: FormBuilder,
+    private novoEnderecoService: NovoEnderecoService
+  ) {}
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   onSubmit(): void {
-    this.novoEnderecoService.cadastrarEndereco(this.checkoutForm.value).subscribe({
-      next: (res) => {
-        console.log(res);
-      },
-      error: (e) => console.error(e)
-    });
-
-    this.checkoutForm.reset();
+    this.novoEnderecoService
+      .cadastrarEndereco(this.checkoutForm.value)
+      .subscribe({
+        next: (res) => {
+          alert("salvo com sucesso!");
+          this.checkoutForm.reset();
+        },
+        error: (e) => {
+          alert("algo deu errado, favor verificar os dados!");
+        },
+      });
   }
-
 }

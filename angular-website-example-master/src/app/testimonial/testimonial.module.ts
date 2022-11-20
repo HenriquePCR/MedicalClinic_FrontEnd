@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TestimonialRoutingModule } from './testimonial-routing.module';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TestimonialPageComponent } from './testimonial-page/testimonial-page.component';
 
 
@@ -12,7 +12,9 @@ import { TestimonialPageComponent } from './testimonial-page/testimonial-page.co
   ],
   imports: [
     CommonModule,
-    TestimonialRoutingModule
+    TestimonialRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class TestimonialModule { }

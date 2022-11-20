@@ -4,15 +4,18 @@
       <h3 class="pull-down"></h3>
       <h2 class="section-title">LOG IN</h2>
     </div>
-    <div>
-      <label for="name">Usuario: </label>
-      <input id="name" type="text"> <br>
-      <label for="name">Senha: </label>
-      <input id="name" type="text"> <br>
-      <button type="button">Logar</button>
-    </div>
-    <!--User Testimonial-->
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="email"> Email </label>
+        <input id="email" type="text" formControlName="email" />
+      </div>
 
-    <!-- End of Testimonial-->
+      <div>
+        <label for="senha"> Senha </label>
+        <input id="logradouro" type="text" formControlName="senha" />
+      </div>
+
+      <button class="button" type="submit">Salvar</button>
+    </form>
   </div>
 </aside>
