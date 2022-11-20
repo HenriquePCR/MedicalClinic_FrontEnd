@@ -14,7 +14,7 @@ import { WebsiteBlockComponent } from "./website-block/website-block.component";
 
 // Modules
 import { AppRoutingModule } from "./app-routing.module";
-import { AboutModule } from "./about/about.module";
+import { AboutModule } from "./agendamento/about.module";
 import { GalleryModule } from "./gallery/gallery.module";
 import { HomeModule } from "./home/home.module";
 import { NotfoundModule } from "./notfound/notfound.module";

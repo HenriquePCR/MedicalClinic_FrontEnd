@@ -109,6 +109,17 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 4, title: "Gallery", link: "/gallery" },
       { id: 5, title: "Log in", link: "/testimonials" },
     ];
+
+    // const menu2 = [
+    //   { id: 1, title: "Novo Funcionário", link: "/home" },
+    //   { id: 2, title: " Novo Paciente", link: "/about" },
+    //   { id: 3, title: "Listar Funcionários", link: "/services" },
+    //   { id: 4, title: "Listar Pacientes", link: "/gallery" },
+    //   { id: 5, title: "Listar Endereços", link: "/testimonials" },
+    //   { id: 6, title: " Listar todos Agendamentos", link: "/testimonials" },
+    //   { id: 7, title: "Listar meus Agendamentos", link: "/testimonials" },
+    // ];
+
     const companies = [
       {
         id: 1,
