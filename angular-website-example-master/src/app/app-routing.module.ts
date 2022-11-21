@@ -31,6 +31,16 @@ const routes: Routes = [
     loadChildren: () =>
       import("./gallery/gallery.module").then((mod) => mod.GalleryModule),
   },
+  {
+    path: "novoFuncionario",
+    loadChildren: () =>
+      import("./restrito/novo-funcionario/novo-funcionario.module").then((mod) => mod.NovoFuncionarioModule),
+  },
+  {
+    path: "gallery",
+    loadChildren: () =>
+      import("./gallery/gallery.module").then((mod) => mod.GalleryModule),
+  },
 
   {
     path: "404",

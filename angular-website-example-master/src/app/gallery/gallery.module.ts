@@ -9,4 +9,4 @@ import { ImageBlockComponent } from "./image-block/image-block.component";
   declarations: [GalleryPageComponent, ImageBlockComponent],
   imports: [CommonModule, GalleryRoutingModule],
 })
-export class GalleryModule {}
+export class GalleryModule { }
