@@ -17,19 +17,19 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
     this.menuOpen = false;
-    this.getMenu();
+    // this.getMenu();
   }
 
   toggleMenu(status: boolean) {
     this.menuOpen = status;
   }
 
-  getMenu() {
-    this.config.getSettings(this.database).subscribe(
-      setting => {
-        this.menu = setting;
-      }
-    )
-  }
+  // getMenu() {
+  //   this.config.getSettings(this.database).subscribe(
+  //     setting => {
+  //       this.menu = setting;
+  //     }
+  //   )
+  // }
 
 }

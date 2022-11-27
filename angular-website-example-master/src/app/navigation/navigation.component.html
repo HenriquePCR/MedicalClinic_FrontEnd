@@ -8,11 +8,7 @@
         <!--End of Banner Logo-->
 
         <!--The Logo that is shown on the sticky Navigation Bar-->
-        <img
-          src="assets/images/logo-2.png"
-          id="navigation-logo"
-          alt="Landing Page"
-        />
+        <img src="assets/images/logo-2.png" id="navigation-logo" alt="Landing Page" />
         <!--End of Navigation Logo-->
       </div>
       <!--End of Logo-->
@@ -23,25 +19,18 @@
 
       <!--Main Navigation-->
       <nav id="nav-main">
-        <app-navmenu [menu]="menu" [menuOpen]="true"></app-navmenu>
+        <app-navmenu [menuOpen]="true"></app-navmenu>
 
       </nav>
       <!--End of Main Navigation-->
 
       <div id="nav-trigger">
 
-        <span
-          [class.open]="menuOpen == true"
-          (click)="toggleMenu(!menuOpen)"
-        ></span>
+        <span [class.open]="menuOpen == true" (click)="toggleMenu(!menuOpen)"></span>
       </div>
       <nav id="nav-mobile">
-        <app-navmenu
-          [menu]="menu"
-          *ngIf="menuOpen === true"
-          (menuStatus)="toggleMenu($event)"
-          [menuOpen]="menuOpen"
-        ></app-navmenu>
+        <app-navmenu  *ngIf="menuOpen === true" (menuStatus)="toggleMenu($event)" [menuOpen]="menuOpen">
+        </app-navmenu>
       </nav>
     </div>
   </div>

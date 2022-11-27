@@ -16,7 +16,7 @@ export class ConfigService {
   config = configuration;
   apiUrl = "api/posts";
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   private handleError<T>(operation = "operation", result?: T) {
     return (error: any): Observable<T> => {
@@ -31,7 +31,7 @@ export class ConfigService {
   }
 
   getSettings(database: string, id?: number): Observable<any> {
-    let url = id? `api/${database}/${id}` : `api/${database}`;
+    let url = id ? `api/${database}/${id}` : `api/${database}`;
     return this.http.get<any>(url).pipe(
       catchError(this.handleError(`Error getting data from ${database}`, []))
     );

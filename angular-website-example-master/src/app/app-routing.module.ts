@@ -41,6 +41,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./gallery/gallery.module").then((mod) => mod.GalleryModule),
   },
+  // {
+  //   path: "restrito",
+  //   loadChildren: () =>
+  //     import("./gallery/gallery.module").then((mod) => mod.GalleryModule),
+  // },
 
   {
     path: "404",
