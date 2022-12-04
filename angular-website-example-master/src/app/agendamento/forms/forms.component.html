@@ -1,23 +1,25 @@
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
         <label for="especialidadeMedica">Especialidade Medica</label>
-        <select name="cars" id="cars">
-            <option value="volvo">Oftalmologista</option>
-            <option value="saab">Pediatra</option>
-            <option value="mercedes">Ortopedista</option>
+        <select name="cars" id="cars" formControlName="especialidade" (ngModelChange)="updateNome()">
+            <option *ngFor="let medico of medicos">{{medico.especialidade}}</option>
         </select>
     </div>
     <div class="form-group">
         <label for="nomeMedico">Nome do médico</label>
-        <input required ngModel name="nomeMedico" id="nomeMedico" type="text">
+        <select name="cars" id="cars" formControlName="nome">
+          <option *ngFor="let nome of nomesMedicos" value="volvo">{{nome}}</option>
+      </select>
     </div>
     <div class="form-group">
         <label for="dataConsulta">Data da consulta</label>
-        <input type="datetime-local" id="dataConsulta">
+        <input formControlName="data" type="date" (ngModelChange)="updateDate()">
     </div>
     <div class="form-group">
         <label for="horaConsulta">Horário disponível para consulta</label>
-        <input id="horaConsulta" type="text">
+        <select formControlName="horario" >
+          <option *ngFor="let medico of medicos">{{medico.especialidade}}</option>
+      </select>
     </div>
     <button class="button" type="submit">Enviar</button>
 </form>
