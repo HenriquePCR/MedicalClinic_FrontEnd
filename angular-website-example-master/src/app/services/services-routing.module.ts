@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ServicesPageComponent } from './novoEndereco/services-page.component';
+import { ServicesPageComponent } from '../novoEndereco/services-page.component';
 
 const routes: Routes = [{
   path: '',
@@ -9,7 +9,7 @@ const routes: Routes = [{
 
 @NgModule({
   imports: [RouterModule.forChild(routes),
-],
+  ],
   exports: [RouterModule]
 })
 export class ServicesRoutingModule { }

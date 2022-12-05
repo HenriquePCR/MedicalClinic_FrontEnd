@@ -31,22 +31,26 @@ const routes: Routes = [
     loadChildren: () =>
       import("./gallery/gallery.module").then((mod) => mod.GalleryModule),
   },
-  {
-    path: "novoFuncionario",
-    loadChildren: () =>
-      import("./restrito/novo-funcionario/novo-funcionario.module").then((mod) => mod.NovoFuncionarioModule),
-  },
+  // {
+  //   path: "novoFuncionario",
+  //   loadChildren: () =>
+  //     import("./restrito/novo-funcionario/novo-funcionario.module").then((mod) => mod.NovoFuncionarioModule),
+  // },
   {
     path: "gallery",
     loadChildren: () =>
       import("./gallery/gallery.module").then((mod) => mod.GalleryModule),
   },
-  // {
-  //   path: "restrito",
-  //   loadChildren: () =>
-  //     import("./gallery/gallery.module").then((mod) => mod.GalleryModule),
-  // },
-
+  {
+    path: "novoFuncionario",
+    loadChildren: () =>
+      import("./restrito/novoFuncionarioFolder/novoFuncionario.module").then((mod) => mod.NovoFuncionarioModule),
+  },
+  {
+    path: "novoPaciente",
+    loadChildren: () =>
+      import("./restrito/novoPacienteFolder/novoPaciente.module").then((mod) => mod.NovoPacienteModule),
+  },
   {
     path: "404",
     loadChildren: () =>

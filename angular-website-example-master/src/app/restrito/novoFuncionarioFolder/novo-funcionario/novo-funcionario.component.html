@@ -1,0 +1,66 @@
+<div id="services" class="scrollto clearfix">
+    <div class="row no-padding-bottom clearfix">
+        <div class="col-3"></div>
+
+        <div class="col-3">
+            <div class="section-heading">
+                <h3></h3>
+                <h2 class="section-title">Adicione um funcionário</h2>
+                <p class="section-subtitle">Página de cadastro de um novo funcionário</p>
+            </div>
+            <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+                <div>
+                    <label for="nome"> Nome </label>
+                    <input id="nome" type="text" formControlName="nome" />
+                </div>
+
+                <div>
+                    <label for="email"> Email </label>
+                    <input id="email" type="text" formControlName="email" />
+                </div>
+                <div>
+                    <label for="telefone"> Telefone </label>
+                    <input id="telefone" type="text" formControlName="telefone" />
+                </div>
+                <div>
+                    <label for="cep"> CEP </label>
+                    <input id="cep" type="text" formControlName="cep" />
+                </div>
+                <div>
+                    <label for="logradouro"> Logradouro </label>
+                    <input id="logradouro" type="text" formControlName="logradouro" />
+                </div>
+                <div>
+                    <label for="bairro"> Bairro </label>
+                    <input id="bairro" type="text" formControlName="bairro" />
+                </div>
+                <div>
+                    <label for="cidade"> Cidade </label>
+                    <input id="cidade" type="text" formControlName="cidade" />
+                </div>
+                <div>
+                    <label for="estado"> Estado </label>
+                    <input id="estado" type="text" formControlName="estado" />
+                </div>
+                <div>
+                    <label for="dataInicio"> Data de início </label>
+                    <input id="dataInicio" type="date" formControlName="dataInicio" />
+                </div>
+
+                <div>
+                    <label for="salario"> Salário </label>
+                    <input id="salario" type="text" formControlName="salario" />
+                </div>
+                <div>
+                    <label for="senha"> Senha </label>
+                    <input id="senha" type="password" formControlName="senha" />
+                </div>
+
+                <button class="button" type="submit">Salvar</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <img src="assets/images/dancer.jpg" alt="Dancer" />
+        </div>
+    </div>
+</div>

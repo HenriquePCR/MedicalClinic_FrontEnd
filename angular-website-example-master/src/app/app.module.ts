@@ -8,9 +8,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
 import { FooterComponent } from "./footer/footer.component";
 import { NavmenuComponent } from "./navmenu/navmenu.component";
-import { NavmenuComponent2 } from "./navmenu2/navmenu.component";
 import { NavigationComponent } from './navigation/navigation.component';
-import { NavigationComponent2 } from './navigation2/navigation.component';
 import { SocialComponent } from './social/social.component';
 import { WebsiteBlockComponent } from "./website-block/website-block.component";
 
@@ -21,27 +19,25 @@ import { GalleryModule } from "./gallery/gallery.module";
 import { HomeModule } from "./home/home.module";
 import { NotfoundModule } from "./notfound/notfound.module";
 import { ServicesModule } from "./services/services.module";
-import { NovoFuncionarioModule } from "./restrito/novo-funcionario/novo-funcionario.module"
 
 // Services
 import { ConfigService } from "./shared/services/config.service";
 import { InMemoryDataService } from "./shared/services/in-memory-data.service";
 import { Header2Component } from './header2/header2.component';
 
-import { NovoPacienteComponent } from './restrito/novo-paciente/novo-paciente.component';
+import { NovoPacienteComponent } from './restrito/novoPacienteFolder/novo-paciente/novo-paciente.component';
 import { ListarFuncionariosComponent } from './restrito/listar-funcionarios/listar-funcionarios.component';
 import { ListarEnderecosComponent } from './restrito/listar-enderecos/listar-enderecos.component';
 import { ListarMeusAgendamentosComponent } from './restrito/listar-meus-agendamentos/listar-meus-agendamentos.component';
 import { ListarTodosAgendamentosComponent } from './restrito/listar-todos-agendamentos/listar-todos-agendamentos.component';
+import { NovoFuncionarioComponent } from './restrito/novoFuncionarioFolder/novo-funcionario/novo-funcionario.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     NavigationComponent,
-    NavigationComponent2,
     NavmenuComponent,
-    NavmenuComponent2,
     SocialComponent,
     WebsiteBlockComponent,
     Header2Component,
@@ -58,7 +54,6 @@ import { ListarTodosAgendamentosComponent } from './restrito/listar-todos-agenda
     GalleryModule,
     HomeModule,
     HttpClientModule,
-    NovoFuncionarioModule,
     NotfoundModule,
     ReactiveFormsModule,
     ServicesModule,

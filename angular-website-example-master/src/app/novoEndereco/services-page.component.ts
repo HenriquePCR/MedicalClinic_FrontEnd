@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder } from "@angular/forms";
-import { NovoEnderecoService } from "../novoEndereco.service";
+import { NovoEnderecoService } from "../services/novoEndereco.service";
 
 @Component({
   selector: "app-services-page",
@@ -19,9 +19,9 @@ export class ServicesPageComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private novoEnderecoService: NovoEnderecoService
-  ) {}
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   onSubmit(): void {
     this.novoEnderecoService
