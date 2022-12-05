@@ -33,9 +33,9 @@ export class FormsComponent implements OnInit {
         this.medicos = res
       },
       error: (e) => {
-        alert("algo deu errado");
+        alert("algo deu errado4");
       }
-     })
+    })
 
 
     this.agendamentoConsultaService.buscarAgenda().subscribe({
@@ -44,24 +44,24 @@ export class FormsComponent implements OnInit {
         this.agenda = res
       },
       error: (e) => {
-        alert("algo deu errado");
+        alert("algo deu errado3");
       }
-     })
+    })
   }
 
-  updateNome(){
+  updateNome() {
     this.nomesMedicos = []
     this.medicos.forEach((res) => {
-      if(res.especialidade == this.checkoutForm.value.especialidade){
+      if (res.especialidade == this.checkoutForm.value.especialidade) {
         this.nomesMedicos.push(res.pessoa.pessoa.nome)
       }
     })
   }
 
-  updateDate(){
-    this.datasDisponiveis = [8,9,10,11,12,13,14,15]
+  updateDate() {
+    this.datasDisponiveis = [8, 9, 10, 11, 12, 13, 14, 15]
     this.medicos.forEach((res) => {
-      if(res.especialidade == this.checkoutForm.value.especialidade){
+      if (res.especialidade == this.checkoutForm.value.especialidade) {
         this.nomesMedicos.push(res.pessoa.pessoa.nome)
       }
     })

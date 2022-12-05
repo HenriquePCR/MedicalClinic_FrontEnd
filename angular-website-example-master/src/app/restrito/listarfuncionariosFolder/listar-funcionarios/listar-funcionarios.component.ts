@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FuncionarioService } from '../../../services/funcionario.service';
 
 @Component({
   selector: 'app-listar-funcionarios',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar-funcionarios.component.css']
 })
 export class ListarFuncionariosComponent implements OnInit {
+  ItemsArray: any[] = [];
 
-  constructor() { }
+  constructor(private funcionarioService: FuncionarioService) {
+    this.funcionarioService.findAll().subscribe((res: any[]) => {
+      this.ItemsArray = res;
+    });
+  }
 
   ngOnInit(): void {
   }

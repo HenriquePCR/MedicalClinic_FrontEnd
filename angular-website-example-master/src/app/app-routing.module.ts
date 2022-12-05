@@ -46,10 +46,16 @@ const routes: Routes = [
     loadChildren: () =>
       import("./restrito/novoFuncionarioFolder/novoFuncionario.module").then((mod) => mod.NovoFuncionarioModule),
   },
+
   {
     path: "novoPaciente",
     loadChildren: () =>
       import("./restrito/novoPacienteFolder/novoPaciente.module").then((mod) => mod.NovoPacienteModule),
+  },
+  {
+    path: "listarFuncionarios",
+    loadChildren: () =>
+      import("./restrito/listarfuncionariosFolder/listarFuncionarios.module").then((mod) => mod.ListarFuncionariosModule),
   },
   {
     path: "404",

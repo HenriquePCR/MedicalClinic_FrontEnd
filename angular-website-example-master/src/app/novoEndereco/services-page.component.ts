@@ -32,7 +32,7 @@ export class ServicesPageComponent implements OnInit {
           this.checkoutForm.reset();
         },
         error: (e) => {
-          alert("algo deu errado, favor verificar os dados!");
+          alert("algo deu errado2, favor verificar os dados!");
         },
       });
   }

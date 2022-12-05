@@ -26,7 +26,7 @@ import { InMemoryDataService } from "./shared/services/in-memory-data.service";
 import { Header2Component } from './header2/header2.component';
 
 import { NovoPacienteComponent } from './restrito/novoPacienteFolder/novo-paciente/novo-paciente.component';
-import { ListarFuncionariosComponent } from './restrito/listar-funcionarios/listar-funcionarios.component';
+import { ListarFuncionariosComponent } from './restrito/listarfuncionariosFolder/listar-funcionarios/listar-funcionarios.component';
 import { ListarEnderecosComponent } from './restrito/listar-enderecos/listar-enderecos.component';
 import { ListarMeusAgendamentosComponent } from './restrito/listar-meus-agendamentos/listar-meus-agendamentos.component';
 import { ListarTodosAgendamentosComponent } from './restrito/listar-todos-agendamentos/listar-todos-agendamentos.component';
@@ -41,8 +41,6 @@ import { NovoFuncionarioComponent } from './restrito/novoFuncionarioFolder/novo-
     SocialComponent,
     WebsiteBlockComponent,
     Header2Component,
-    NovoPacienteComponent,
-    ListarFuncionariosComponent,
     ListarEnderecosComponent,
     ListarMeusAgendamentosComponent,
     ListarTodosAgendamentosComponent,

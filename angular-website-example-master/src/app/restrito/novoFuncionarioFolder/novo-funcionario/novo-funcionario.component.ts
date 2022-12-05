@@ -32,7 +32,7 @@ export class NovoFuncionarioComponent implements OnInit {
           this.checkoutForm.reset();
         },
         error: (e) => {
-          alert("algo deu errado, favor verificar os dados!");
+          alert("algo deu errado1, favor verificar os dados!");
         },
       });
   }
