@@ -2,25 +2,26 @@
     <div class="row no-padding-bottom clearfix">
 
         <div class="section-heading">
-            <h2 class="section-title">Tabelas de funcionários</h2>
+            <h2 class="section-title">Tabelas de pacientes</h2>
         </div>
         <table>
             <thead>
                 <tr>
                     <th>Nome</th>
                     <th>Email</th>
-                    <th>Salário</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>Tipo sanguíneo</th>
                     <th>Código</th>
-                    <th>Hash</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let item of ItemsArray">
                     <th>{{ item.pessoa.nome }}</th>
                     <td>{{ item.pessoa.email }}</td>
-                    <td>{{ item.salario}}</td>
+                    <td>{{ item.peso }}</td>
+                    <td>{{ item.altura }}</td>
                     <td>{{ item.codigo }}</td>
-                    <td>{{ item.senhaHash }}</td>
                     <td>
                         <!-- <button type="button">Edit</button>
                   <button type="button">Delete</button> -->

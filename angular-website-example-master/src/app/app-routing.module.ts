@@ -58,6 +58,11 @@ const routes: Routes = [
       import("./restrito/listarfuncionariosFolder/listarFuncionarios.module").then((mod) => mod.ListarFuncionariosModule),
   },
   {
+    path: "listarPacientes",
+    loadChildren: () =>
+      import("./restrito/listarfPacientesFolder/listarPacientes.module").then((mod) => mod.ListarPacientesModule),
+  },
+  {
     path: "404",
     loadChildren: () =>
       import("./notfound/notfound.module").then((mod) => mod.NotfoundModule),

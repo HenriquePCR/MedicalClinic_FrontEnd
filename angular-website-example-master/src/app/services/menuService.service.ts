@@ -31,7 +31,7 @@ export class MenuService {
       { id: 1, title: "Novo Funcionario", link: "/novoFuncionario" },
       { id: 2, title: "Novo Paciente", link: "/novoPaciente" },
       { id: 3, title: "Funcionários", link: "/listarFuncionarios" },
-      { id: 4, title: "Pacientes", link: "/gallery" },
+      { id: 4, title: "Pacientes", link: "/listarPacientes" },
       { id: 5, title: "Endereços", link: "/logIn" },
       { id: 6, title: "Todos Agendamentos", link: "/home" },
       { id: 7, title: "Meus Agendamentos", link: "/gallery" }
