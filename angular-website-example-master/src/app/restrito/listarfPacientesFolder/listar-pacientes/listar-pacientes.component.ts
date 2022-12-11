@@ -11,6 +11,7 @@ export class ListarPacientesComponent implements OnInit {
 
   constructor(private pacientesService: PacientesService) {
     this.pacientesService.findAll().subscribe((res: any[]) => {
+      console.log(res)
       this.ItemsArray = res;
     });
   }

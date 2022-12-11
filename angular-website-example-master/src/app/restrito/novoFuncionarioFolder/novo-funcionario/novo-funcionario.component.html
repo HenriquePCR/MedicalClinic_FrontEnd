@@ -43,8 +43,8 @@
                     <input id="estado" type="text" formControlName="estado" />
                 </div>
                 <div>
-                    <label for="dataInicio"> Data de início </label>
-                    <input id="dataInicio" type="date" formControlName="dataInicio" />
+                    <label for="dataInicio"> Data de Contrato </label>
+                    <input id="dataInicio" type="date" formControlName="dataContrato" />
                 </div>
 
                 <div>
@@ -53,7 +53,18 @@
                 </div>
                 <div>
                     <label for="senha"> Senha </label>
-                    <input id="senha" type="password" formControlName="senha" />
+                    <input id="senha" type="password" formControlName="senhaHash" />
+                </div>
+                <div>Funcionário é medico?
+                    <input type="checkbox" id="mycheckbox" (change)="openMedicosInput()">
+                </div>
+                <div style="display:none" id="crm">
+                    <label for="crm"> CRM </label>
+                    <input type="text" formControlName="crm" />
+                </div>
+                <div style="display:none" id="especialidade" >
+                    <label for="especialidade"> Especialidade </label>
+                    <input id="especialidade" type="text" formControlName="especialidade" />
                 </div>
 
                 <button class="button" type="submit">Salvar</button>

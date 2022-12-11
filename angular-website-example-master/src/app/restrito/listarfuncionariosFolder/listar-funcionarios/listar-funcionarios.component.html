@@ -10,21 +10,13 @@
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Salário</th>
-                    <th>Código</th>
-                    <th>Hash</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let item of ItemsArray">
-                    <th>{{ item.pessoa.nome }}</th>
+                    <td>{{ item.pessoa.nome }}</td>
                     <td>{{ item.pessoa.email }}</td>
                     <td>{{ item.salario}}</td>
-                    <td>{{ item.codigo }}</td>
-                    <td>{{ item.senhaHash }}</td>
-                    <td>
-                        <!-- <button type="button">Edit</button>
-                  <button type="button">Delete</button> -->
-                    </td>
                 </tr>
             </tbody>
         </table>

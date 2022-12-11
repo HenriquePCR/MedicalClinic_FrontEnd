@@ -9,11 +9,19 @@ import { NovoFuncionarioService } from "../../../services/novoFuncionario.servic
 })
 export class NovoFuncionarioComponent implements OnInit {
   checkoutForm = this.formBuilder.group({
+    dataContrato: '',
+    salario: '',
+    senhaHash: '',
+    nome: '',
+    email: '',
+    telefone: '',
     cep: "",
     logradouro: "",
     bairro: "",
     cidade: "",
     estado: "",
+    crm: "",
+    especialidade: ""
   });
 
   constructor(
@@ -35,5 +43,22 @@ export class NovoFuncionarioComponent implements OnInit {
           alert("algo deu errado1, favor verificar os dados!");
         },
       });
+  }
+
+  openMedicosInput(){
+
+    var checkBox = document.getElementById("mycheckbox") as HTMLInputElement | null;
+
+    var crm = document.getElementById("crm");
+    var especialidade = document.getElementById("especialidade");
+    console.log('entrou')
+    if (checkBox.checked == true){
+      crm.style.display = "block";
+      especialidade.style.display = "block";
+    } else {
+      crm.style.display = "none";
+      especialidade.style.display = "none";
+    }
+
   }
 }

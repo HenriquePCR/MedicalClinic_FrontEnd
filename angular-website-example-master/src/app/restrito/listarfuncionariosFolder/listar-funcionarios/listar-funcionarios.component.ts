@@ -11,6 +11,7 @@ export class ListarFuncionariosComponent implements OnInit {
 
   constructor(private funcionarioService: FuncionarioService) {
     this.funcionarioService.findAll().subscribe((res: any[]) => {
+      console.log(res)
       this.ItemsArray = res;
     });
   }
