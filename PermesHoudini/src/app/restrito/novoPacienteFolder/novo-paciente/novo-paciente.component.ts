@@ -9,6 +9,12 @@ import { NovoPacienteService } from "../../../services/novoPaciente.service"
 })
 export class NovoPacienteComponent implements OnInit {
   checkoutForm = this.formBuilder.group({
+    nome: "",
+    email: "",
+    telefone: "",
+    peso: "",
+    altura: "",
+    tipoSanguineo: "",
     cep: "",
     logradouro: "",
     bairro: "",
@@ -32,7 +38,7 @@ export class NovoPacienteComponent implements OnInit {
           this.checkoutForm.reset();
         },
         error: (e) => {
-          alert("algo deu errado1, favor verificar os dados!");
+          alert("algo deu errado, favor verificar os dados!");
         },
       });
   }
