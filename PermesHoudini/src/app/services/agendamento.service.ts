@@ -11,6 +11,7 @@ export class AgendamentoService {
     constructor(private http: HttpClient, private httpClient: HttpClient) { }
 
     addUsuarioLogado(usuario: any){
+        console.log('colocando', usuario)
         this.usuarioLogado = usuario
     }
 

@@ -16,6 +16,8 @@ export class TestimonialPageComponent implements OnInit {
     senha: "",
   });
 
+  dados: any
+
   constructor(
     private formBuilder: FormBuilder,
     private loginService: LoginService,
@@ -27,10 +29,12 @@ export class TestimonialPageComponent implements OnInit {
   ngOnInit() {}
 
   onSubmit(): void {
+    this.dados = this.loginForm.value
     this.loginService.loginSistema(this.loginForm.value).subscribe({
       next: (res) => {
         alert("Bem vindo de volta!");
-        this.agendamentoService.addUsuarioLogado(this.loginForm.value)
+        console.log(this.dados)
+        this.agendamentoService.addUsuarioLogado(this.dados)
         this.menuService.setMenu();
         this.router.navigate(['/novoFuncionario']);
         this.loginForm.reset();

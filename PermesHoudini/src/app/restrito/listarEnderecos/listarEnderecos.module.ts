@@ -1,9 +1,9 @@
 import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from "@angular/common";
 
 import { ListarEnderecoRoutingModule } from "./listarEnderecos-routing.module";
-import { ListarEnderecosComponent } from "./listar-enderecos/listar-enderecos.component";
+import { ListarEnderecosComponent } from "./listar-enderecos.component";
 
 @NgModule({
   declarations: [ListarEnderecosComponent],

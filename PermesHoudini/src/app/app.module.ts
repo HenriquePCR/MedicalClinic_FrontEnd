@@ -19,6 +19,7 @@ import { GalleryModule } from "./gallery/gallery.module";
 import { HomeModule } from "./home/home.module";
 import { NotfoundModule } from "./notfound/notfound.module";
 import { ServicesModule } from "./services/services.module";
+import { CommonModule } from "@angular/common";
 
 // Services
 import { ConfigService } from "./shared/services/config.service";
@@ -38,6 +39,7 @@ import { NovoFuncionarioComponent } from './restrito/novoFuncionarioFolder/novo-
   ],
   imports: [
     AboutModule,
+    CommonModule,
     AppRoutingModule,
     BrowserModule,
     GalleryModule,

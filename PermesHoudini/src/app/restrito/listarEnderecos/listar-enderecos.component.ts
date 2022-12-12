@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EnderecoService } from '../../../services/enderecos.service';
+import { EnderecoService } from '../../services/enderecos.service';
 
 @Component({
   selector: 'app-listar-enderecos',

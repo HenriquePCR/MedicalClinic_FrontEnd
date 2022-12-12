@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListarEnderecosComponent } from "./listar-Enderecos/listar-enderecos.component";
+import { ListarEnderecosComponent } from "./listar-enderecos.component";
 
 const routes: Routes = [{
   path: '',

@@ -7,6 +7,6 @@ import { ListarTodosAgendamentosComponent } from "./listar-todos-agendamentos.co
 
 @NgModule({
   declarations: [ListarTodosAgendamentosComponent],
-  imports: [CommonModule, ListarTodosAgendamentosRouterModule, ReactiveFormsModule],
+  imports:  [ListarTodosAgendamentosRouterModule, ReactiveFormsModule, CommonModule],
 })
 export class ListarTodosAgendamentosModule { }
