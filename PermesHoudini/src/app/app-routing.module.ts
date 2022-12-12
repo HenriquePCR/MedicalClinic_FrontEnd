@@ -68,6 +68,17 @@ const routes: Routes = [
       import("./restrito/listarEnderecos/listarEnderecos.module").then((mod) => mod.ListarEnderecoModule),
   },
   {
+    path: "listarTodosAgendamentos",
+    loadChildren: () =>
+      import("./restrito/listar-todos-agendamentos/listarTodosAgendamentos.module").then((mod) => mod.ListarTodosAgendamentosModule),
+  },
+  {
+    path: "listarMeusAgendamentos",
+    loadChildren: () =>
+      import("./restrito/listar-meus-agendamentos/listarMeusAgendamentos-routing.module").then((mod) => mod.ListarMeusAgendamentosRouterModule),
+  },
+
+  {
     path: "404",
     loadChildren: () =>
       import("./notfound/notfound.module").then((mod) => mod.NotfoundModule),

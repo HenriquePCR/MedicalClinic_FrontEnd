@@ -1,9 +1,9 @@
-import { Observable } from "rxjs";
 import { Component, OnInit } from "@angular/core";
-import { ConfigService } from "../../shared/services/config.service";
 import { FormBuilder } from "@angular/forms";
 import { LoginService } from "../login.service";
 import { MenuService } from "src/app/services/menuService.service";
+import { AgendamentoService } from "src/app/services/agendamento.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-testimonial-page",
@@ -19,13 +19,24 @@ export class TestimonialPageComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private loginService: LoginService,
-    private menuService: MenuService
+    private menuService: MenuService,
+    private router: Router,
+    private agendamentoService: AgendamentoService
   ) {}
 
   ngOnInit() {}
 
   onSubmit(): void {
-    this.menuService.setMenu();
+    this.loginService.loginSistema(this.loginForm.value).subscribe({
+      next: (res) => {
+        alert("Bem vindo de volta!");
+        this.agendamentoService.addUsuarioLogado(this.loginForm.value)
+        this.menuService.setMenu();
+        this.router.navigate(['/novoFuncionario']);
+        this.loginForm.reset();
+      },
+      error: (e) => alert("Você não é um usuário do sistema!"),
+    });
 
     this.loginForm.reset();
   }

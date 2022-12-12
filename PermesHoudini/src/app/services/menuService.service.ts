@@ -33,8 +33,8 @@ export class MenuService {
       { id: 3, title: "Funcionários", link: "/listarFuncionarios" },
       { id: 4, title: "Pacientes", link: "/listarPacientes" },
       { id: 5, title: "Endereços", link: "/listarEnderecos" },
-      { id: 6, title: "Todos Agendamentos", link: "/home" },
-      { id: 7, title: "Meus Agendamentos", link: "/gallery" }
+      { id: 6, title: "Todos Agendamentos", link: "/listarTodosAgendamentos" },
+      { id: 7, title: "Meus Agendamentos", link: "/listarMeusAgendamentos" }
     ]);
   }
 

@@ -4,12 +4,22 @@ import { Observable } from 'rxjs';
 @Injectable({
     providedIn: 'root',
 })
-export class PacientesService {
+export class AgendamentoService {
+
+    usuarioLogado: any;
 
     constructor(private http: HttpClient, private httpClient: HttpClient) { }
 
+    addUsuarioLogado(usuario: any){
+        this.usuarioLogado = usuario
+    }
+
+    getUsuarioLogado(){
+        return this.usuarioLogado
+    }
+
     findAll = () =>
         this.http.get<any>(
-            `http://localhost:8080/paciente`
+            `http://localhost:8080/agenda`
         );
 }

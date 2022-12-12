@@ -22,14 +22,9 @@ import { ServicesModule } from "./services/services.module";
 
 // Services
 import { ConfigService } from "./shared/services/config.service";
-import { InMemoryDataService } from "./shared/services/in-memory-data.service";
-import { Header2Component } from './header2/header2.component';
 
 import { NovoPacienteComponent } from './restrito/novoPacienteFolder/novo-paciente/novo-paciente.component';
 import { ListarFuncionariosComponent } from './restrito/listarfuncionariosFolder/listar-funcionarios/listar-funcionarios.component';
-import { ListarEnderecosComponent } from './restrito/listar-enderecos/listar-enderecos.component';
-import { ListarMeusAgendamentosComponent } from './restrito/listar-meus-agendamentos/listar-meus-agendamentos.component';
-import { ListarTodosAgendamentosComponent } from './restrito/listar-todos-agendamentos/listar-todos-agendamentos.component';
 import { NovoFuncionarioComponent } from './restrito/novoFuncionarioFolder/novo-funcionario/novo-funcionario.component';
 
 @NgModule({
@@ -40,10 +35,6 @@ import { NovoFuncionarioComponent } from './restrito/novoFuncionarioFolder/novo-
     NavmenuComponent,
     SocialComponent,
     WebsiteBlockComponent,
-    Header2Component,
-    ListarEnderecosComponent,
-    ListarMeusAgendamentosComponent,
-    ListarTodosAgendamentosComponent,
   ],
   imports: [
     AboutModule,
@@ -55,13 +46,6 @@ import { NovoFuncionarioComponent } from './restrito/novoFuncionarioFolder/novo-
     NotfoundModule,
     ReactiveFormsModule,
     ServicesModule,
-    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
-    // and returns simulated server responses.
-    // Remove it when a real server is ready to receive requests.
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
-      dataEncapsulation: false,
-      passThruUnknownUrl: true,
-    }),
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent],

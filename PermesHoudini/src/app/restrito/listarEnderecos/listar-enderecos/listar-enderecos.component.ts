@@ -11,6 +11,7 @@ export class ListarEnderecosComponent implements OnInit {
 
   constructor(private enderecoService: EnderecoService) {
     this.enderecoService.findAll().subscribe((res: any[]) => {
+      console.log(res)
       this.ItemsArray = res;
     });
   }

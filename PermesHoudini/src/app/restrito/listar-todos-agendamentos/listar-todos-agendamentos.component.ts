@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AgendamentoService } from '../../../app/services/agendamento.service';
 
 @Component({
   selector: 'app-listar-todos-agendamentos',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarTodosAgendamentosComponent implements OnInit {
 
-  constructor() { }
+  ItemsArray: any[] = [];
+
+  constructor(private agendamentoService: AgendamentoService) {
+    this.agendamentoService.findAll().subscribe((res: any[]) => {
+      console.log(res)
+      this.ItemsArray = res;
+    });
+   }
 
   ngOnInit(): void {
   }
