@@ -32,7 +32,7 @@ export class MenuService {
       { id: 2, title: "Novo Paciente", link: "/novoPaciente" },
       { id: 3, title: "Funcionários", link: "/listarFuncionarios" },
       { id: 4, title: "Pacientes", link: "/listarPacientes" },
-      { id: 5, title: "Endereços", link: "/logIn" },
+      { id: 5, title: "Endereços", link: "/listarEnderecos" },
       { id: 6, title: "Todos Agendamentos", link: "/home" },
       { id: 7, title: "Meus Agendamentos", link: "/gallery" }
     ]);

@@ -1,0 +1,33 @@
+<div id="services" class="scrollto clearfix">
+    <div class="row no-padding-bottom clearfix">
+
+        <div class="section-heading">
+            <h2 class="section-title">Tabelas de endereços</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>CEP</th>
+                    <th>Logradouro</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of ItemsArray">
+                    <th>{{ item.cep }}</th>
+                    <td>{{ item.logradouro }}</td>
+                    <td>{{ item.bairro}}</td>
+                    <td>{{ item.cidade }}</td>
+                    <td>{{ item.estado }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="col-3">
+
+        </div>
+
+    </div>
+</div>
