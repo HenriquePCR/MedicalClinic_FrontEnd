@@ -6,10 +6,11 @@
 Vitor Theodoro Rocha Domingues - 20193017359
 
 
-Henrique Pereira Cristófaro
+Henrique Pereira Cristófaro - 20193025717
 
 
-Matheus Freire
+Matheus Freire Henrique Fonseca - 20203002786
+
 
 
 
