@@ -27,6 +27,7 @@ import { ConfigService } from "./shared/services/config.service";
 import { NovoPacienteComponent } from './restrito/novoPacienteFolder/novo-paciente/novo-paciente.component';
 import { ListarFuncionariosComponent } from './restrito/listarfuncionariosFolder/listar-funcionarios/listar-funcionarios.component';
 import { NovoFuncionarioComponent } from './restrito/novoFuncionarioFolder/novo-funcionario/novo-funcionario.component';
+import { ListarMeusAgendamentosModule } from "./restrito/listar-meus-agendamentos/listarMeusAgendamentos.module";
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { NovoFuncionarioComponent } from './restrito/novoFuncionarioFolder/novo-
     NotfoundModule,
     ReactiveFormsModule,
     ServicesModule,
+    ListarMeusAgendamentosModule,
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent],
