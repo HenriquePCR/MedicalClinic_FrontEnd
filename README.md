@@ -12,8 +12,12 @@ Henrique Pereira Cristófaro - 20193025717
 Matheus Freire Henrique Fonseca - 20203002786
 
 <b><h2> Links do vídeo explicativo </h2> </b>
+Clique na imagem para abrir o vídeo
+[![Watch the video](https://img.youtube.com/vi/p2D8vcL1GEk/maxresdefault.jpg)](https://www.youtube.com/watch?v=p2D8vcL1GEk)
 
-https://youtu.be/p2D8vcL1GEk
+
+
+
 
 
 <b><h2> Links dos repositórios </h2> </b>
