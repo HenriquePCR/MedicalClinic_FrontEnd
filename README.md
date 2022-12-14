@@ -32,8 +32,10 @@ backend: https://github.com/VitorTheodoro1/ClinicaMedica_Backend
 - Clone os dois repositórios front/back 
 - no front, abre o projeto pelo VsCode, baixe as dependências npm i e dê npm start para rodar
 - no back, abre pelo eclipse, clique com botão esquerdo do mouse no nome do projeto, maven -> update project 
-- após ter instalado pgAdmin ou dBeaver e ter cadastrado suas credenciais vá para a raiz do projeto no eclipse -> src/main/resources -> application.properties -> e ensira 
-- 
+- após ter instalado pgAdmin ou dBeaver e ter cadastrado suas credenciais vá para a raiz do projeto no eclipse -> src/main/resources -> application.properties -> e modifique os dados, user, senha e url do database de acordo com o que vc cadastrou
+- de run -> run e starte o backend
+- se der tudo certo, as tabelas serão criadas automaticamente no banco 
+- vá pra localhost:4200 para visualizar o sistema, você pode popular os dados por lá ou pelo sql puro no postgres
 
 <b><h2> Preview</h2> </b>
 ![image](https://user-images.githubusercontent.com/72466642/207735543-3b192929-861d-4d7f-a4a5-a015f03db690.png)
