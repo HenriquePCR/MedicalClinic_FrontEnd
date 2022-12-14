@@ -10,7 +10,6 @@ import { FooterComponent } from "./footer/footer.component";
 import { NavmenuComponent } from "./navmenu/navmenu.component";
 import { NavigationComponent } from './navigation/navigation.component';
 import { SocialComponent } from './social/social.component';
-import { WebsiteBlockComponent } from "./website-block/website-block.component";
 
 // Modules
 import { AppRoutingModule } from "./app-routing.module";
@@ -36,7 +35,6 @@ import { ListarMeusAgendamentosModule } from "./restrito/listar-meus-agendamento
     NavigationComponent,
     NavmenuComponent,
     SocialComponent,
-    WebsiteBlockComponent,
   ],
   imports: [
     AboutModule,

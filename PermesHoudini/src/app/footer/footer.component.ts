@@ -12,7 +12,7 @@ import { IFooter } from "./footer";
 export class FooterComponent implements OnInit {
   // footer$: Observable<IFooter> = new Observable<IFooter>();
   footer$: Observable<any> = new Observable();
-  constructor(private config: ConfigService) {}
+  constructor(private config: ConfigService) { }
 
   ngOnInit() {
     this.getPageData("pages", 6);

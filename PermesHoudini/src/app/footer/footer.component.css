@@ -4,3 +4,21 @@
   margin-right: 0;
   margin-left: 15px;
 }
+
+.text-dark {
+  color: rgb(145, 121, 17);
+}
+
+.sociais {
+  display: flex;
+  justify-content: center;
+
+}
+
+.socialB {
+  padding: 10px;
+}
+
+.total {
+  padding-top: 1em;
+}

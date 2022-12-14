@@ -1,14 +1,45 @@
-<footer id="landing-footer" class="clearfix" *ngIf="footer$ | async as footer">
-  <div class="row clearfix">
-    <p id="copyright" class="col-2">
-      {{ footer.tagline }}
-      <a routerLink="{{ footer.developerlink }}">{{ footer.developer }}</a>
-    </p>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <!--Social Icons in Footer-->
-    <div class="col-2" style="text-align: right">
-      <app-social></app-social>
+<body>
+  <footer class="total">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgb(237, 239, 245);">
+      © 2022 Copyright:
+      <a class="text-dark">Permes Houdini</a>
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Conecte-se conosco nas redes sociais:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="sociais">
+          <a href="" class="socialB">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+          <a href="" class="socialB">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="" class="socialB">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="" class="socialB">
+            <i class="fa fa-twitch" aria-hidden="true"></i>
+          </a>
+          <a href="" class="socialB">
+            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+          </a>
+          <a href="" class="socialB">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
     </div>
-    <!--End of Social Icons in Footer-->
-  </div>
-</footer>
+    <!-- Copyright -->
+
+  </footer>
+</body>
