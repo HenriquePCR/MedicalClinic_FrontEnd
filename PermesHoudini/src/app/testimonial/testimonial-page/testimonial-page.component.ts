@@ -24,24 +24,24 @@ export class TestimonialPageComponent implements OnInit {
     private menuService: MenuService,
     private router: Router,
     private agendamentoService: AgendamentoService
-  ) {}
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   onSubmit(): void {
-    this.dados = this.loginForm.value
-    this.loginService.loginSistema(this.loginForm.value).subscribe({
-      next: (res) => {
-        alert("Bem vindo de volta!");
-        console.log(this.dados)
-        this.agendamentoService.addUsuarioLogado(this.dados)
-        this.menuService.setMenu();
-        this.router.navigate(['/novoFuncionario']);
-        this.loginForm.reset();
-      },
-      error: (e) => alert("Você não é um usuário do sistema!"),
-    });
+    // this.dados = this.loginForm.value
+    // this.loginService.loginSistema(this.loginForm.value).subscribe({
+    //   next: (res) => {
+    //     alert("Bem vindo de volta!");
+    //     console.log(this.dados)
+    //     this.agendamentoService.addUsuarioLogado(this.dados)
+    this.menuService.setMenu();
+    this.router.navigate(['/novoFuncionario']);
+    //     this.loginForm.reset();
+    //   },
+    //   error: (e) => alert("Você não é um usuário do sistema!"),
+    // });
 
-    this.loginForm.reset();
+    // this.loginForm.reset();
   }
 }

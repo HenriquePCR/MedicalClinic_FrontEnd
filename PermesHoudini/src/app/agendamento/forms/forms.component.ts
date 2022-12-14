@@ -16,6 +16,7 @@ export class FormsComponent implements OnInit {
   agenda: any
 
   checkoutForm = this.formBuilder.group({
+    paciente: '',
     nome: '',
     data: '',
     especialidade: '',
