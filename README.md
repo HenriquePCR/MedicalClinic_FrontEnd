@@ -38,6 +38,7 @@ backend: https://github.com/VitorTheodoro1/ClinicaMedica_Backend
 - de run -> run e starte o backend
 - se der tudo certo, as tabelas serão criadas automaticamente no banco 
 - vá pra localhost:4200 para visualizar o sistema, você pode popular os dados por lá ou pelo sql puro no postgres
+- Qualquer dúvida contatar alguém do grupo
 
 <b><h2> Preview</h2> </b>
 ![image](https://user-images.githubusercontent.com/72466642/207735543-3b192929-861d-4d7f-a4a5-a015f03db690.png)
