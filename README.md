@@ -10,7 +10,7 @@ Henrique Pereira Cristófaro
 
 Matheus Freire
 
-Links dos repositórios:
+ <b> Links dos repositórios: </b>
 
 frontend: https://github.com/Riuregan/ClinicaMedica_Frontend_v2
 
