@@ -1,6 +1,6 @@
 # ClinicaMedica_Frontend_v2
 
-<br> Integrantes: </br>
+<b> Integrantes: </b>
 
 Vitor Theodoro Rocha Domingues - 20193017359
 
