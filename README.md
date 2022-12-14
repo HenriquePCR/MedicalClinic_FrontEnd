@@ -22,6 +22,9 @@ frontend: https://github.com/Riuregan/ClinicaMedica_Frontend_v2
 
 backend: https://github.com/VitorTheodoro1/ClinicaMedica_Backend
 
+<b><h2>Diagrama de classes</h2> </b>
+
+![image](https://user-images.githubusercontent.com/72466642/207738359-133ebf55-082d-468b-8a01-4633be2d51a7.png)
 
 <b><h2> Instruções para rodar o projeto </h2> </b>
 
