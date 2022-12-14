@@ -1,4 +1,4 @@
-# ClinicaMedica_Frontend_v2
+# ClinicaMedica_Frontend
 
 <b><h2> Integrantes: </h2> </b>
 
@@ -18,7 +18,7 @@ https://youtu.be/p2D8vcL1GEk
 
 <b><h2> Links dos repositórios </h2> </b>
 
-frontend: https://github.com/Riuregan/ClinicaMedica_Frontend_v2
+frontend: https://github.com/Riuregan/ClinicaMedica_Frontend
 
 backend: https://github.com/VitorTheodoro1/ClinicaMedica_Backend
 
