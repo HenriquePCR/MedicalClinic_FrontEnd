@@ -22,9 +22,9 @@ Clique na imagem para abrir o vídeo
 
 <b><h2> Links dos repositórios </h2> </b>
 
-frontend: https://github.com/Riuregan/ClinicaMedica_Frontend
+frontend: https://github.com/HenriquePCR/MedicalClinic_FrontEnd
 
-backend: https://github.com/VitorTheodoro1/ClinicaMedica_Backend
+backend: https://github.com/HenriquePCR/MedicalClinic_Backend
 
 <b><h2>Diagrama de classes</h2> </b>
 
